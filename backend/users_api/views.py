@@ -19,7 +19,7 @@ logger = logging.getLogger('webserver')
 @api_view(['POST', 'GET'])
 # @permission_classes([IsSuperUser]) # user registration should be open to everyone
 def users(request):
-    logging.debug('Users requested')
+    logging.debug(f'Request Body: {request.data}')
     if request.method == 'GET':
         users = User.objects.all()
         serializer = UserSerializer(users, many=True)

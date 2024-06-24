@@ -10,6 +10,8 @@ document.getElementById("register-form").addEventListener("submit", function (e)
     formData.forEach((value, key) => {
         data[key] = value;
     });
+    data["is_staff"] = true; // Provide staff access to the new user
+
     fetch(usersRegisterEndpoint, {
         method: "POST",
         headers: {

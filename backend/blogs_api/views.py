@@ -4,14 +4,14 @@ from rest_framework.request import Request
 from rest_framework import status
 from .models import Blog
 from .serializers import BlogSerializer
-from backend.users_api.permissions import IsSuperUser
+from backend.users_api.permissions import IsSuperUser, IsStaffUser, IsStaffOrSuperUser
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 import logging
 logger = logging.getLogger('webserver')
 
 @api_view(['GET', 'POST'])
-@permission_classes([IsSuperUser])
+@permission_classes([IsStaffOrSuperUser])
 def blogs(request: Request) -> Response:
     """
     Get all blogs or create a new blog.
