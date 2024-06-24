@@ -1,0 +1,57 @@
+INFO 2024-06-24 10:28:31,540 logger logger.py:9 process_request GET /
+INFO 2024-06-24 10:28:31,577 performance performance.py:13 process_response Performance: GET / took 0.04s
+INFO 2024-06-24 10:28:31,578 logger logger.py:14 process_response GET / 200 0.04s
+INFO 2024-06-24 10:28:34,212 logger logger.py:9 process_request GET /blogs/
+INFO 2024-06-24 10:28:34,216 performance performance.py:13 process_response Performance: GET /blogs/ took 0.00s
+INFO 2024-06-24 10:28:34,216 logger logger.py:14 process_response GET /blogs/ 200 0.00s
+INFO 2024-06-24 10:28:34,451 logger logger.py:9 process_request GET /api/blogs/?page=1
+ERROR 2024-06-24 10:28:34,636 authentication authentication.py:33 process_request Invalid token: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid or expired', code='token_not_valid')}]}
+INFO 2024-06-24 10:28:34,637 performance performance.py:13 process_response Performance: GET /api/blogs/?page=1 took 0.19s
+INFO 2024-06-24 10:28:34,637 logger logger.py:14 process_response GET /api/blogs/?page=1 401 0.19s
+INFO 2024-06-24 10:28:35,908 logger logger.py:9 process_request GET /users/login/
+INFO 2024-06-24 10:28:35,912 performance performance.py:13 process_response Performance: GET /users/login/ took 0.00s
+INFO 2024-06-24 10:28:35,913 logger logger.py:14 process_response GET /users/login/ 200 0.00s
+INFO 2024-06-24 10:28:37,214 logger logger.py:9 process_request POST /api/users/login
+INFO 2024-06-24 10:28:37,772 performance performance.py:13 process_response Performance: POST /api/users/login took 0.56s
+INFO 2024-06-24 10:28:37,772 logger logger.py:14 process_response POST /api/users/login 200 0.56s
+INFO 2024-06-24 10:28:37,811 logger logger.py:9 process_request GET /blogs/
+INFO 2024-06-24 10:28:37,814 performance performance.py:13 process_response Performance: GET /blogs/ took 0.00s
+INFO 2024-06-24 10:28:37,814 logger logger.py:14 process_response GET /blogs/ 200 0.00s
+INFO 2024-06-24 10:28:37,926 logger logger.py:9 process_request GET /api/blogs/?page=1
+DEBUG 2024-06-24 10:28:37,938 views views.py:27 blogs Blogs requested
+INFO 2024-06-24 10:28:37,960 performance performance.py:13 process_response Performance: GET /api/blogs/?page=1 took 0.03s
+INFO 2024-06-24 10:28:37,961 logger logger.py:14 process_response GET /api/blogs/?page=1 200 0.03s
+INFO 2024-06-24 10:29:28,787 logger logger.py:9 process_request GET /api/blogs/150
+INFO 2024-06-24 10:29:28,798 performance performance.py:13 process_response Performance: GET /api/blogs/150 took 0.01s
+INFO 2024-06-24 10:29:28,799 logger logger.py:14 process_response GET /api/blogs/150 200 0.01s
+INFO 2024-06-24 10:30:49,914 logger logger.py:9 process_request GET /blogs/?page=9
+INFO 2024-06-24 10:30:49,916 performance performance.py:13 process_response Performance: GET /blogs/?page=9 took 0.00s
+INFO 2024-06-24 10:30:49,916 logger logger.py:14 process_response GET /blogs/?page=9 200 0.00s
+INFO 2024-06-24 10:30:50,141 logger logger.py:9 process_request GET /api/blogs/?page=9
+DEBUG 2024-06-24 10:30:50,149 views views.py:27 blogs Blogs requested
+INFO 2024-06-24 10:30:50,155 performance performance.py:13 process_response Performance: GET /api/blogs/?page=9 took 0.01s
+INFO 2024-06-24 10:30:50,155 logger logger.py:14 process_response GET /api/blogs/?page=9 200 0.01s
+INFO 2024-06-24 10:30:54,210 logger logger.py:9 process_request GET /api/blogs/105
+INFO 2024-06-24 10:30:54,216 performance performance.py:13 process_response Performance: GET /api/blogs/105 took 0.00s
+INFO 2024-06-24 10:30:54,216 logger logger.py:14 process_response GET /api/blogs/105 200 0.00s
+INFO 2024-06-24 10:31:00,537 logger logger.py:9 process_request PATCH /api/blogs/105
+INFO 2024-06-24 10:31:00,554 performance performance.py:13 process_response Performance: PATCH /api/blogs/105 took 0.02s
+INFO 2024-06-24 10:31:00,556 logger logger.py:14 process_response PATCH /api/blogs/105 200 0.02s
+INFO 2024-06-24 10:31:00,566 logger logger.py:9 process_request GET /api/blogs/?page=9
+DEBUG 2024-06-24 10:31:00,571 views views.py:27 blogs Blogs requested
+INFO 2024-06-24 10:31:00,576 performance performance.py:13 process_response Performance: GET /api/blogs/?page=9 took 0.01s
+INFO 2024-06-24 10:31:00,576 logger logger.py:14 process_response GET /api/blogs/?page=9 200 0.01s
+INFO 2024-06-24 10:31:03,476 logger logger.py:9 process_request GET /blogs/?page=8
+INFO 2024-06-24 10:31:03,478 performance performance.py:13 process_response Performance: GET /blogs/?page=8 took 0.00s
+INFO 2024-06-24 10:31:03,478 logger logger.py:14 process_response GET /blogs/?page=8 200 0.00s
+INFO 2024-06-24 10:31:03,570 logger logger.py:9 process_request GET /api/blogs/?page=8
+DEBUG 2024-06-24 10:31:03,576 views views.py:27 blogs Blogs requested
+INFO 2024-06-24 10:31:03,582 performance performance.py:13 process_response Performance: GET /api/blogs/?page=8 took 0.01s
+INFO 2024-06-24 10:31:03,583 logger logger.py:14 process_response GET /api/blogs/?page=8 200 0.01s
+INFO 2024-06-24 10:31:04,846 logger logger.py:9 process_request GET /blogs/?page=9
+INFO 2024-06-24 10:31:04,848 performance performance.py:13 process_response Performance: GET /blogs/?page=9 took 0.00s
+INFO 2024-06-24 10:31:04,848 logger logger.py:14 process_response GET /blogs/?page=9 200 0.00s
+INFO 2024-06-24 10:31:04,949 logger logger.py:9 process_request GET /api/blogs/?page=9
+DEBUG 2024-06-24 10:31:04,957 views views.py:27 blogs Blogs requested
+INFO 2024-06-24 10:31:04,962 performance performance.py:13 process_response Performance: GET /api/blogs/?page=9 took 0.01s
+INFO 2024-06-24 10:31:04,962 logger logger.py:14 process_response GET /api/blogs/?page=9 200 0.01s
