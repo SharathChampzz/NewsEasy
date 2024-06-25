@@ -1,3 +1,7 @@
 *.pyc
 *.log
 pyenv
+*.bak
+*.dat
+*.dir
+.env
